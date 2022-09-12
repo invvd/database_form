@@ -1,6 +1,6 @@
 import re
 
-def registerUsr():
+def registerusr():
         #Form register
 
         reg_usr = str(input("\nUsername: "))
@@ -14,11 +14,11 @@ def registerUsr():
 
         #print(repeated_usr)
         if len(repeated_usr) > 0:
-            print("\nEl nombre de usuario ya está en uso, prueba con otro.")
-            return registerUsr()
+            print("\nUsername already used, please try another.")
+            return registerusr()
 
         elif len(repeated_usr) == 0:
-            print("\nNombre de usuario válido.")
+            print("\nUsername valid.")
             reg_pwd = str(input("\nPassword (whithout spaces): "))
             reg_pwd_confirm = str(input("\nConfirm Password: "))
 
@@ -33,4 +33,4 @@ def registerUsr():
             usr_database_w.write("{} | {}\n".format(reg_usr, reg_pwd))
             usr_database_w.write("")
             usr_database_w.close()
-            print("\nRegistro exitoso")
+            print("\nSuccessful registration!")

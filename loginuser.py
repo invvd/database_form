@@ -1,6 +1,7 @@
 import re
+from registeruser import registerusr
 
-def loginUsr():
+def loginusr():
     
     log_usr = str(input("\nUsername: "))
 
@@ -26,12 +27,12 @@ def loginUsr():
         log_auth = re.findall(str(log_usr) + "|" + str(log_pwd), read_usr_database)
 
     elif str(repeated_usr) != str("['{}']".format(log_usr)):
-        print("\nEl nombre de usuario no existe, registrate primero.")
-        exit()
+        print("\nUsername doesn't exists, please sign in")
+        return registerusr()
 
     if str(log_auth) == "['{}' | '{}']".format(log_usr, log_pwd):
-        print("\nAcceso concedido, estamos más cerca.")
+        print("\nWelcome back, " + log_usr + "!")
     
     elif str(log_auth) != "['{}' | '{}']".format(log_usr, log_pwd):
-        print("\nAcceso denegado.")
+        print("\nAccess denied.")
         exit()

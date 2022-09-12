@@ -1,0 +1,1 @@
+- Separar usernames de contrasenas para que no haya errores en las validaciones
