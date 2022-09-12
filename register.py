@@ -72,5 +72,9 @@ elif usr_response == "L" or usr_response == "l":
         print("\nEl nombre de usuario no existe, registrate primero.")
         exit()
 
-    if str(log_auth) == "['{}', '{}']".format(log_usr, log_pwd):
+    if str(log_auth) == "['{}' | '{}']".format(log_usr, log_pwd):
         print("\nAcceso concedido, estamos más cerca.")
+    
+    elif str(log_auth) != "['{}' | '{}']".format(log_usr, log_pwd):
+        print("\nAcceso denegado.")
+        exit()
