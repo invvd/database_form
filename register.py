@@ -33,7 +33,7 @@ if usr_response == "R" or usr_response == "r":
     usr_database_w = open("usr_database.txt", "a")
 
     if reg_pwd != reg_pwd_confirm:
-        print("Password doesn't match")
+        print("\nPassword doesn't match")
 
     elif reg_pwd == reg_pwd_confirm:
         usr_database_w.write("{} | {}\n".format(reg_usr, reg_pwd))
