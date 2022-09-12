@@ -45,7 +45,7 @@ if usr_response == "R" or usr_response == "r":
 
 elif usr_response == "L" or usr_response == "l":
 
-    log_usr = str(input("Username: "))
+    log_usr = str(input("\nUsername: "))
 
     #No repetir usernames
 
