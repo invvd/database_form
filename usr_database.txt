@@ -1,2 +1,5 @@
 Dani | 12
 Diego | 13
+pepito | 12
+exit() | as
+diego | 12
